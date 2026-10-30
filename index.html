@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patagônia Argentina · Roteiro de viagem · 26/02 a 13/03/2027</title>
+<meta name="description" content="Roteiro dia a dia da viagem de férias para a Patagônia Argentina: Ushuaia, El Chaltén, El Calafate e Bariloche.">
+<meta name="theme-color" content="#1d2a33">
+<style>
+  :root{
+    --ink:#1d2a33; --muted:#5b6b75; --line:#dde5e8;
+    --bg:#f3f6f7; --card:#ffffff; --ice:#eaf5f6;
+    --ush:#2b5c8a; --cha:#c0622b; --cal:#178a94; --bar:#3d7a4a; --trip:#6b7280;
+    --warn-bg:#fff6e5; --warn:#a36400;
+    --radius:14px;
+    --shadow:0 1px 2px rgba(0,0,0,.05),0 4px 16px rgba(29,42,51,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+  /* ---------- Capa ---------- */
+  .hero{position:relative;min-height:min(88vh,820px);display:flex;align-items:flex-end;color:#fff;
+        background:#1d2a33 url("images/laguna-de-los-tres_01.webp") center 35%/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;
+        background:linear-gradient(180deg,rgba(10,20,30,.15) 0%,rgba(10,20,30,.25) 45%,rgba(10,20,30,.85) 100%)}
+  .hero .wrap{position:relative;padding-bottom:48px;width:100%}
+  .hero .kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;opacity:.9}
+  .hero h1{font-size:clamp(2.4rem,8vw,4.6rem);margin:.2em 0 .15em}
+  .hero .dates{font-size:1.15rem;opacity:.95}
+  .route{display:flex;flex-wrap:wrap;gap:6px 10px;margin:18px 0 22px;font-size:.95rem}
+  .route span{background:rgba(255,255,255,.16);backdrop-filter:blur(4px);padding:4px 12px;border-radius:99px}
+  .route i{font-style:normal;opacity:.7}
+  .countdown{display:flex;gap:10px;flex-wrap:wrap}
+  .countdown div{background:rgba(255,255,255,.14);backdrop-filter:blur(4px);border-radius:12px;
+                 padding:10px 14px;min-width:74px;text-align:center}
+  .countdown b{display:block;font-size:1.7rem;font-family:Georgia,serif}
+  .countdown small{font-size:.75rem;opacity:.85;text-transform:uppercase;letter-spacing:.08em}
+  .countdown-msg{font-size:1.1rem;margin:0}
+
+  /* ---------- Navegação ---------- */
+  nav.top{position:sticky;top:0;z-index:20;background:rgba(29,42,51,.96);backdrop-filter:blur(6px)}
+  nav.top ul{list-style:none;margin:0 auto;padding:10px 16px;display:flex;gap:8px;overflow-x:auto;
+             max-width:980px;scrollbar-width:none}
+  nav.top ul::-webkit-scrollbar{display:none}
+  nav.top a{display:block;white-space:nowrap;text-decoration:none;color:#fff;font-size:.9rem;
+            padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.08)}
+  nav.top a:hover,nav.top a.active{background:rgba(255,255,255,.24)}
+  nav.top .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+  #todayBtn{display:none;background:#f2b84b;color:#1d2a33;font-weight:600}
+
+  /* ---------- Seções ---------- */
+  section{padding:44px 0 8px}
+  .sec-head{display:flex;align-items:flex-end;gap:14px;margin-bottom:18px;border-bottom:3px solid var(--c,var(--ink));padding-bottom:10px}
+  .sec-head h2{font-size:clamp(1.7rem,5vw,2.3rem);color:var(--c,var(--ink))}
+  .sec-head p{margin:0 0 4px;color:var(--muted);font-size:.95rem}
+  .lead{color:var(--muted);margin:-6px 0 20px}
+
+  /* ---------- Resumo ---------- */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px}
+  .stat{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+  .stat b{display:block;font-size:2rem;font-family:Georgia,serif}
+  .stat span{color:var(--muted);font-size:.9rem}
+  .bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:28px}
+  .base{background:var(--card);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);border-top:5px solid var(--c)}
+  .base h3{font-size:1.2rem;color:var(--c)}
+  .base p{margin:4px 0 0;font-size:.92rem;color:var(--muted)}
+  .base .n{font-weight:700;color:var(--ink)}
+  h3.sub{font-size:1.25rem;margin:26px 0 10px}
+  .table-wrap{overflow-x:auto;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;font-size:.93rem}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:#f8fafb}
+  tr:last-child td{border-bottom:0}
+  .tbd{color:var(--warn);font-weight:600}
+  @media(max-width:640px){
+    .table-wrap{background:none;box-shadow:none;overflow:visible}
+    table,tbody,tr,td{display:block;width:100%}
+    thead{display:none}
+    tr{background:var(--card);border-radius:12px;box-shadow:var(--shadow);margin-bottom:10px;padding:8px 0}
+    td{display:grid;grid-template-columns:92px 1fr;gap:10px;white-space:normal;border-bottom:0;padding:4px 14px}
+    td::before{content:attr(data-label);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:2px}
+  }
+
+  /* ---------- Cartões de dia ---------- */
+  .day{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);margin:0 0 18px;
+       border-left:6px solid var(--c);overflow:hidden}
+  .day.today{outline:3px solid #f2b84b;outline-offset:2px}
+  .day-head{display:flex;gap:14px;align-items:center;padding:16px 18px 6px}
+  .date{flex:0 0 auto;width:62px;text-align:center;border-radius:12px;background:var(--c);color:#fff;padding:6px 0 7px}
+  .date b{display:block;font-size:1.6rem;font-family:Georgia,serif;line-height:1}
+  .date small{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+  .day-head .wd{font-size:.82rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  .day-head h3{font-size:1.3rem}
+  .today-tag{display:none;background:#f2b84b;color:#1d2a33;border-radius:99px;font-size:.72rem;font-weight:700;padding:2px 8px;margin-left:6px;vertical-align:3px}
+  .day.today .today-tag{display:inline-block}
+  .day-body{padding:6px 18px 18px}
+  ul.tl{list-style:none;margin:6px 0 0;padding:0}
+  ul.tl li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line)}
+  ul.tl li:last-child{border-bottom:0}
+  ul.tl time,ul.tl .t{font-weight:700;font-variant-numeric:tabular-nums;color:var(--c)}
+  ul.tl .t{color:var(--muted);font-weight:400}
+
+  /* ---------- Passeios ---------- */
+  .act{margin-top:14px;background:var(--ice);border-radius:12px;padding:14px}
+  .act h4{font-size:1.2rem;margin-bottom:4px}
+  .act .where{color:var(--muted);font-size:.9rem;margin:0 0 10px}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:10px 0 12px}
+  .gallery button{padding:0;border:0;background:none;cursor:zoom-in;border-radius:10px;overflow:hidden}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .3s}
+  .gallery button:hover img{transform:scale(1.03)}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:0 0 12px}
+  .fact{background:#fff;border-radius:10px;padding:8px 10px}
+  .fact small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .fact b{font-size:.98rem}
+  .cols{display:grid;grid-template-columns:1fr;gap:4px 22px}
+  @media(min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+  .cols h5{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--c);margin:8px 0 4px}
+  .cols ul{margin:0;padding-left:18px}
+  .cols li{margin:3px 0;font-size:.95rem}
+  .note{font-size:.82rem;color:var(--muted);margin:10px 0 0}
+  .warn{background:var(--warn-bg);border-left:4px solid var(--warn);border-radius:8px;padding:9px 12px;margin:10px 0;font-size:.93rem}
+  .warn b{color:var(--warn)}
+
+  /* ---------- Sugestões ---------- */
+  .sug{border:2px dashed #9fb3bc;border-radius:12px;padding:12px 14px;margin-top:12px;background:#fbfdfd}
+  .badge{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+         background:#e2ebef;color:#40535d;border-radius:99px;padding:2px 9px;margin-right:6px;vertical-align:2px}
+  .sug h4{font-size:1.05rem;display:inline}
+  .sug p{margin:6px 0 0;font-size:.95rem}
+  .sug-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .sug-grid .sug{margin:0}
+  .sug .mini{font-size:.85rem;color:var(--muted);margin-top:6px}
+
+  /* ---------- Dicas e pendências ---------- */
+  .tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .tip{background:var(--card);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+  .tip h3{font-size:1.1rem;margin-bottom:6px}
+  .tip ul{margin:0;padding-left:18px}
+  .tip li{margin:4px 0;font-size:.94rem}
+  .todo{list-style:none;padding:0;margin:0;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .todo li{border-bottom:1px solid var(--line)}
+  .todo li:last-child{border-bottom:0}
+  .todo label{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;cursor:pointer}
+  .todo input{width:20px;height:20px;margin-top:2px;accent-color:var(--bar);flex:0 0 auto}
+  .todo input:checked + span{text-decoration:line-through;color:var(--muted)}
+
+  footer{padding:40px 0 60px;color:var(--muted);font-size:.85rem;text-align:center}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{position:fixed;inset:0;z-index:50;background:rgba(8,14,20,.92);display:none;align-items:center;justify-content:center;padding:20px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-height:88vh;max-width:100%;border-radius:8px}
+  .lightbox figcaption{color:#e7eef1;text-align:center;margin-top:10px;font-size:.95rem}
+  .lightbox button{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.15);color:#fff;border:0;
+                   width:44px;height:44px;border-radius:50%;font-size:1.5rem;cursor:pointer}
+
+  /* ---------- Impressão ---------- */
+  @media print{
+    nav.top,.lightbox,.countdown,#todayBtn{display:none!important}
+    .hero{min-height:auto;color:var(--ink);background:none}
+    .hero::before{display:none}
+    .hero .wrap{padding:20px 0}
+    .route span{background:#eee}
+    body{background:#fff}
+    .day,.tip,.stat,.base,.table-wrap{box-shadow:none;border:1px solid var(--line)}
+    .day,.act,.sug{break-inside:avoid}
+    .gallery img{aspect-ratio:16/9}
+  }
+</style>
+</head>
+<body>
+
+<!-- ======================= CAPA ======================= -->
+<header class="hero" id="topo">
+  <div class="wrap">
+    <div class="kicker">Roteiro de férias</div>
+    <h1>Patagônia Argentina</h1>
+    <div class="dates">26 de fevereiro a 13 de março de 2027 · 16 dias</div>
+    <div class="route">
+      <span>Florianópolis</span><i>›</i>
+      <span>Ushuaia</span><i>›</i>
+      <span>El Chaltén</span><i>›</i>
+      <span>El Calafate</span><i>›</i>
+      <span>Bariloche</span><i>›</i>
+      <span>Florianópolis</span>
+    </div>
+    <div id="countdown" class="countdown" aria-live="polite"></div>
+  </div>
+</header>
+
+<!-- ======================= NAVEGAÇÃO ======================= -->
+<nav class="top" aria-label="Seções do roteiro">
+  <ul>
+    <li><a href="#hoje" id="todayBtn">Hoje</a></li>
+    <li><a href="#resumo">Resumo</a></li>
+    <li><a href="#ida"><span class="dot" style="background:var(--trip)"></span>Ida</a></li>
+    <li><a href="#ushuaia"><span class="dot" style="background:#6fa3d6"></span>Ushuaia</a></li>
+    <li><a href="#chalten"><span class="dot" style="background:#e8915c"></span>El Chaltén</a></li>
+    <li><a href="#calafate"><span class="dot" style="background:#4cc3cc"></span>El Calafate</a></li>
+    <li><a href="#bariloche"><span class="dot" style="background:#79b887"></span>Bariloche</a></li>
+    <li><a href="#volta"><span class="dot" style="background:var(--trip)"></span>Volta</a></li>
+    <li><a href="#dicas">Dicas</a></li>
+    <li><a href="#pendencias">Pendências</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+<!-- ======================= RESUMO ======================= -->
+<section id="resumo">
+  <div class="sec-head"><h2>Resumo da viagem</h2></div>
+
+  <div class="stats">
+    <div class="stat"><b>16</b><span>dias de viagem</span></div>
+    <div class="stat"><b>4</b><span>bases na Patagônia</span></div>
+    <div class="stat"><b>7</b><span>trilhas e passeios definidos</span></div>
+    <div class="stat"><b>6</b><span>voos</span></div>
+    <div class="stat"><b>3</b><span>carros alugados</span></div>
+  </div>
+
+  <div class="bases">
+    <div class="base" style="--c:var(--ush)">
+      <h3>Ushuaia</h3>
+      <p><span class="n">3 noites</span> · 27/02 a 02/03</p>
+      <p>AirBnB · Carro Localiza</p>
+    </div>
+    <div class="base" style="--c:var(--cha)">
+      <h3>El Chaltén</h3>
+      <p><span class="n">3 noites</span> · 02/03 a 05/03</p>
+      <p>Chaltén Suites Hotel · Carro Always</p>
+    </div>
+    <div class="base" style="--c:var(--cal)">
+      <h3>El Calafate</h3>
+      <p><span class="n">3 noites</span> · 05/03 a 08/03</p>
+      <p><span class="tbd">Hotel a definir</span> · Carro Always</p>
+    </div>
+    <div class="base" style="--c:var(--bar)">
+      <h3>Bariloche</h3>
+      <p><span class="n">5 noites</span> · 08/03 a 13/03</p>
+      <p><span class="tbd">Hotel e locadora a definir</span></p>
+    </div>
+  </div>
+
+  <h3 class="sub">Voos</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Data</th><th>Trecho</th><th>Saída</th><th>Chegada</th><th>Companhia</th></tr></thead>
+      <tbody>
+        <tr><td>Sex 26/02</td><td>Florianópolis (FLN) → Buenos Aires (AEP)</td><td>22:05</td><td><span>00:20 <small>(sáb)</small></span></td><td>Aerolíneas Argentinas</td></tr>
+        <tr><td>Sáb 27/02</td><td>Buenos Aires (AEP) → Ushuaia (USH)</td><td>05:00</td><td>08:40</td><td>Aerolíneas Argentinas</td></tr>
+        <tr><td>Ter 02/03</td><td>Ushuaia (USH) → El Calafate (FTE)</td><td>11:20</td><td>12:40</td><td>Aerolíneas Argentinas</td></tr>
+        <tr><td>Seg 08/03</td><td>El Calafate (FTE) → Bariloche (BRC)</td><td>10:20</td><td>12:05</td><td>Aerolíneas Argentinas</td></tr>
+        <tr><td>Sáb 13/03</td><td>Bariloche (BRC) → Buenos Aires (AEP)</td><td>12:55</td><td>15:00</td><td>Aerolíneas Argentinas</td></tr>
+        <tr><td>Sáb 13/03</td><td>Buenos Aires (AEP) → Florianópolis (FLN)</td><td>18:50</td><td>20:50</td><td>Aerolíneas Argentinas</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">Carros</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cidade</th><th>Locadora</th><th>Retirada</th><th>Devolução</th></tr></thead>
+      <tbody>
+        <tr><td>Ushuaia</td><td>Localiza</td><td>Sáb 27/02 · 10:00</td><td>Ter 02/03 · 10:00</td></tr>
+        <tr><td>El Calafate</td><td>Always</td><td>Ter 02/03 · 13:30</td><td>Seg 08/03 · 09:00</td></tr>
+        <tr><td>Bariloche</td><td class="tbd">A definir</td><td>Seg 08/03 · 13:00</td><td>Sáb 13/03 · 10:00</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ======================= IDA ======================= -->
+<section id="ida" style="--c:var(--trip)">
+  <div class="sec-head"><h2>Ida</h2><p>Florianópolis → Buenos Aires → Ushuaia</p></div>
+
+  <article class="day" data-date="2027-02-26" style="--c:var(--trip)">
+    <div class="day-head">
+      <div class="date"><b>26</b><small>fev</small></div>
+      <div><div class="wd">Sexta-feira</div><h3>Início da viagem <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><time>22:05</time><span>Saída de Florianópolis (FLN) em voo da Aerolíneas Argentinas</span></li>
+        <li><time>00:20</time><span>Chegada em Buenos Aires (AEP), já no sábado 27/02</span></li>
+        <li><span class="t">4h40</span><span>Escala no Aeroparque Jorge Newbery (AEP)</span></li>
+        <li><time>05:00</time><span>Saída de AEP para Ushuaia em voo da Aerolíneas Argentinas</span></li>
+      </ul>
+      <div class="sug"><span class="badge">Dica</span>
+        <p>A noite é praticamente toda em trânsito. Leve tapa-olho, protetor de ouvido e uma blusa quente na bagagem de mão. Em voos para Ushuaia, sente do lado esquerdo para tentar ver o Canal Beagle e as montanhas na aproximação.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= USHUAIA ======================= -->
+<section id="ushuaia" style="--c:var(--ush)">
+  <div class="sec-head"><h2>Ushuaia</h2><p>Terra do Fogo · 27/02 a 02/03</p></div>
+  <p class="lead">A cidade mais austral do mundo, espremida entre o Canal Beagle e a Cordilheira dos Andes. No fim de fevereiro os dias ainda são longos, com o sol se pondo por volta das 20h30.</p>
+
+  <!-- 27/02 -->
+  <article class="day" data-date="2027-02-27" style="--c:var(--ush)">
+    <div class="day-head">
+      <div class="date"><b>27</b><small>fev</small></div>
+      <div><div class="wd">Sábado</div><h3>Chegada e caminhada com pinguins <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><time>08:40</time><span>Chegada em Ushuaia (USH)</span></li>
+        <li><time>10:00</time><span>Retirada do carro na agência <b>Localiza</b></span></li>
+        <li><span class="t">manhã</span><span>Deixar as malas no AirBnB</span></li>
+        <li><time>14:00</time><span>Check-in do passeio <b>Caminata con Pingüinos</b> (Piratour) na casilla PIRATOUR do Muelle Turístico</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Caminata con Pingüinos · Isla Martillo</h4>
+        <p class="where">Agência Piratour · Canal Beagle, cerca de 85 km a leste de Ushuaia</p>
+        <div class="gallery">
+          <button type="button" data-cap="Pinguins na Isla Martillo"><img src="images/pinguins_01.jpg" alt="Pinguins na Isla Martillo" loading="lazy"></button>
+          <button type="button" data-cap="Caminhada entre os pinguins"><img src="images/pinguins_02.jpg" alt="Grupo caminhando entre pinguins" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Duração total</small><b>~6 a 7 h</b></div>
+          <div class="fact"><small>Na ilha</small><b>~1 h a pé</b></div>
+          <div class="fact"><small>Esforço</small><b>Leve</b></div>
+          <div class="fact"><small>Grupo</small><b>Pequeno, vagas limitadas</b></div>
+        </div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>A Piratour é a única empresa autorizada a desembarcar e caminhar na Isla Martillo, por isso as vagas diárias são poucas.</li>
+              <li>A maior parte da colônia é de <b>pinguins-de-magalhães</b>. Também há um grupo de <b>pinguins-papua</b>, e às vezes aparece um <b>pinguim-rei</b>.</li>
+              <li>No fim de fevereiro os filhotes já estão grandes e trocando a penugem. Em abril a colônia começa a migrar para o norte.</li>
+              <li>A ilha fica perto da <b>Estancia Harberton</b>, fundada em 1886 pelo missionário Thomas Bridges. Ela é a estância mais antiga da Terra do Fogo e abriga o museu de mamíferos e aves marinhas Acatushún.</li>
+              <li>O farol Les Eclaireurs, cartão-postal do canal, costuma ser chamado de "farol do fim do mundo". O farol do livro de Júlio Verne, porém, é outro, na Isla de los Estados.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Chegue com folga ao check-in das 14h. Almoce antes, porque a volta é no começo da noite.</li>
+              <li>Vista camadas: corta-vento impermeável, gorro e luvas. No barco o vento é frio mesmo no verão.</li>
+              <li>Mantenha distância dos pinguins e siga as orientações do guia. Não se pode tocar nem alimentar os animais.</li>
+              <li>Se costuma enjoar, leve remédio para enjoo. O Canal Beagle pode ficar agitado.</li>
+              <li>Protetor solar e óculos escuros: o sol austral é forte mesmo com tempo fresco.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 28/02 -->
+  <article class="day" data-date="2027-02-28" style="--c:var(--ush)">
+    <div class="day-head">
+      <div class="date"><b>28</b><small>fev</small></div>
+      <div><div class="wd">Domingo</div><h3>Trilha Cerro Guanaco <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">cedo</span><span>Ir de carro ao Parque Nacional Tierra del Fuego, estacionamento do Lago Roca (Acigami)</span></li>
+        <li><span class="t">até 12:30</span><span>Horário máximo para iniciar a subida, segundo a ficha oficial do parque</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Cerro Guanaco</h4>
+        <p class="where">Parque Nacional Tierra del Fuego · saída do estacionamento do Lago Roca (Acigami), cerca de 20 km de Ushuaia</p>
+        <div class="gallery">
+          <button type="button" data-cap="Vista do Cerro Guanaco"><img src="images/cerro-guanaco_01.jpg" alt="Vista do alto do Cerro Guanaco" loading="lazy"></button>
+          <button type="button" data-cap="Cerro Guanaco, Canal Beagle e Lago Roca"><img src="images/cerro-guanaco_02.jpg" alt="Paisagem da trilha do Cerro Guanaco" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Distância</small><b>~8 a 12 km ida e volta</b></div>
+          <div class="fact"><small>Desnível</small><b>~900 a 970 m</b></div>
+          <div class="fact"><small>Duração</small><b>~6 a 8 h</b></div>
+          <div class="fact"><small>Dificuldade</small><b>Alta</b></div>
+        </div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>O cume, a cerca de 970 m, tem uma das vistas mais completas da região: Canal Beagle, Bahía Lapataia, Lago Acigami e as montanhas do lado chileno.</li>
+              <li>A trilha atravessa três ambientes: floresta de lengas, um <b>turbal</b> (turfeira encharcada) e a encosta alto-andina, sem vegetação.</li>
+              <li>O Lago Acigami, antigo Lago Roca, é binacional. A trilha vizinha, Hito XXIV, termina no marco da fronteira com o Chile.</li>
+              <li>No parque termina a Ruta Nacional 3, na Bahía Lapataia. A placa do fim da estrada marca 3.079 km até Buenos Aires e 17.848 km até o Alasca.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Compre o ingresso do parque antes, pelo site oficial <a href="https://ventaweb.apn.gob.ar/" target="_blank" rel="noopener">ventaweb.apn.gob.ar</a>, ou pague na portaria.</li>
+              <li>O início é compartilhado com a trilha Hito XXIV. A bifurcação para o Guanaco fica a cerca de 900 m.</li>
+              <li>O turbal no meio da subida é muito enlameado. Bota impermeável, polaina e bastões fazem diferença.</li>
+              <li>O trecho final é íngreme e o cume costuma ter vento forte. Leve jaqueta, gorro e luvas mesmo com sol.</li>
+              <li>Se sobrar energia, passe na Bahía Lapataia para ver a placa do fim da Ruta 3.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">As fontes divergem bastante sobre distância e tempo. Confirme o horário limite com os guarda-parques no dia.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 01/03 -->
+  <article class="day" data-date="2027-03-01" style="--c:var(--ush)">
+    <div class="day-head">
+      <div class="date"><b>01</b><small>mar</small></div>
+      <div><div class="wd">Segunda-feira</div><h3>Laguna Esmeralda + Glaciar Ojo del Albino <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">cedo</span><span>Ir de carro até o início da trilha, na Ruta Nacional 3, cerca de 18 km de Ushuaia</span></li>
+        <li><span class="t">dia todo</span><span>Trilha até a Laguna Esmeralda e, se as condições permitirem, continuação até o Glaciar Ojo del Albino</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Laguna Esmeralda + Glaciar Ojo del Albino</h4>
+        <p class="where">Vale de Tierra Mayor e do rio Esmeralda · início na Ruta Nacional 3</p>
+        <div class="gallery">
+          <button type="button" data-cap="Laguna Esmeralda"><img src="images/laguna-esmeralda_01.jpg" alt="Laguna Esmeralda" loading="lazy"></button>
+          <button type="button" data-cap="Glaciar Ojo del Albino"><img src="images/glaciar-ojo-del-albino_01.jpg" alt="Glaciar Ojo del Albino" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Só a laguna</small><b>~9 km ida e volta · fácil a moderada</b></div>
+          <div class="fact"><small>Laguna → glaciar</small><b>+3,4 km por trecho · +550 m</b></div>
+          <div class="fact"><small>Total com glaciar</small><b>~16 a 20 km · ~800 m</b></div>
+          <div class="fact"><small>Duração total</small><b>~9 a 10 h</b></div>
+        </div>
+        <div class="warn"><b>Atenção:</b> o trecho entre a laguna e o glaciar tem pedra solta, grande desnível e uma passagem técnica perto do fim. A secretaria de turismo de Ushuaia recomenda fazê-lo com guia de montanha autorizado.</div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>A cor verde-esmeralda vem da "farinha glacial", um pó fino de rocha moída pelo gelo que fica em suspensão na água e reflete a luz.</li>
+              <li>No caminho aparecem diques de <b>castores</b>. Eles foram trazidos do Canadá em 1946 para uma indústria de peles que não deu certo. Sem predadores, viraram uma praga que derruba florestas inteiras.</li>
+              <li>O turbal do vale é uma turfeira que levou milhares de anos para se formar. Por isso é importante não sair da trilha.</li>
+              <li>O Ojo del Albino é um glaciar suspenso com uma pequena lagoa de degelo aos seus pés.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Comece cedo, por volta das 7h, para ter margem caso decidam seguir até o glaciar.</li>
+              <li>Use a laguna como ponto de decisão. Se estiver tarde, com chuva ou vento forte, volte de lá.</li>
+              <li>Bota impermeável é essencial: o turbal deixa o pé encharcado.</li>
+              <li>O estacionamento no início da trilha pode ser pago.</li>
+              <li>Baixe o trajeto em um app de mapas offline. Depois da laguna a marcação é escassa.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= EL CHALTÉN ======================= -->
+<section id="chalten" style="--c:var(--cha)">
+  <div class="sec-head"><h2>El Chaltén</h2><p>Parque Nacional Los Glaciares, zona norte · 02/03 a 05/03</p></div>
+  <p class="lead">Fundada em 1985, El Chaltén é uma das cidades mais novas da Argentina e foi declarada Capital Nacional do Trekking. As trilhas saem direto do centro.</p>
+
+  <!-- 02/03 -->
+  <article class="day" data-date="2027-03-02" style="--c:var(--trip)">
+    <div class="day-head">
+      <div class="date"><b>02</b><small>mar</small></div>
+      <div><div class="wd">Terça-feira</div><h3>Ushuaia → El Calafate → El Chaltén <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><time>10:00</time><span>Devolver o carro na <b>Localiza</b></span></li>
+        <li><time>11:20</time><span>Voo de Ushuaia (USH) para El Calafate (FTE) pela Aerolíneas Argentinas</span></li>
+        <li><time>12:40</time><span>Chegada em El Calafate</span></li>
+        <li><time>13:30</time><span>Retirada do carro na agência <b>Always</b></span></li>
+        <li><span class="t">~3 h</span><span>Estrada para El Chaltén, cerca de 215 km pela RN 40 e pela RP 23</span></li>
+        <li><span class="t">tarde</span><span>Check-in no <b>Chaltén Suites Hotel</b></span></li>
+      </ul>
+      <div class="sug"><span class="badge">Dicas para a estrada</span>
+        <p>Abasteça em El Calafate, porque quase não há postos no caminho. Na metade do trajeto fica o histórico <b>Hotel La Leona</b>, à beira do rio La Leona. Diz a lenda que Butch Cassidy e Sundance Kid se esconderam ali em 1905, e hoje ele é parada tradicional para um café com torta. Na RP 23, já perto da cidade, há um mirante com a primeira vista do Fitz Roy. Cuidado com guanacos e ñandus na pista.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 03/03 -->
+  <article class="day" data-date="2027-03-03" style="--c:var(--cha)">
+    <div class="day-head">
+      <div class="date"><b>03</b><small>mar</small></div>
+      <div><div class="wd">Quarta-feira</div><h3>Trilha Laguna de los Tres (Fitz Roy) <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">cedo</span><span>Início da trilha no extremo norte da Av. San Martín, saindo a pé do centro de El Chaltén</span></li>
+        <li><span class="t">dia todo</span><span>Subida até a Laguna de los Tres, aos pés do Fitz Roy</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Laguna de los Tres</h4>
+        <p class="where">Parque Nacional Los Glaciares · saída do centro de El Chaltén</p>
+        <div class="gallery">
+          <button type="button" data-cap="Laguna de los Tres e o Fitz Roy"><img src="images/laguna-de-los-tres_01.webp" alt="Laguna de los Tres com o Fitz Roy ao fundo" loading="lazy"></button>
+          <button type="button" data-cap="Laguna de los Tres"><img src="images/lagunas-de-lost-tres_02.webp" alt="Laguna de los Tres vista de cima" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Distância</small><b>~20 a 22 km ida e volta</b></div>
+          <div class="fact"><small>Desnível</small><b>~750 a 800 m</b></div>
+          <div class="fact"><small>Duração</small><b>~8 a 9 h</b></div>
+          <div class="fact"><small>Dificuldade</small><b>Moderada, final difícil</b></div>
+        </div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>O Fitz Roy tem 3.405 m. Os tehuelches o chamavam de <b>Chaltén</b>, "montanha que fumega", por causa das nuvens que quase sempre envolvem o cume.</li>
+              <li>O nome Fitz Roy homenageia Robert FitzRoy, capitão do HMS Beagle, o navio da viagem de Charles Darwin.</li>
+              <li>A laguna homenageia três integrantes da expedição francesa de 1952, que fez a primeira ascensão do Fitz Roy.</li>
+              <li>O logotipo da marca Patagonia é inspirado na silhueta do maciço do Fitz Roy.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Desde 2024 o parque cobra ingresso nos acessos das trilhas de El Chaltén. Compre antes pelo site <a href="https://ventaweb.apn.gob.ar/" target="_blank" rel="noopener">ventaweb.apn.gob.ar</a>.</li>
+              <li>O último trecho é o mais duro: cerca de 400 m de subida íngreme e pedregosa em pouco mais de uma hora.</li>
+              <li>Na ida, vale o desvio pela Laguna Capri, que tem uma ótima vista do Fitz Roy.</li>
+              <li>Na laguna, caminhe alguns minutos para a direita até o mirante da Laguna Sucia, logo abaixo.</li>
+              <li>Saia cedo: a montanha costuma estar mais limpa de manhã e a trilha fica cheia ao longo do dia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 04/03 -->
+  <article class="day" data-date="2027-03-04" style="--c:var(--cha)">
+    <div class="day-head">
+      <div class="date"><b>04</b><small>mar</small></div>
+      <div><div class="wd">Quinta-feira</div><h3>Trilha Loma de las Pizarras <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">bem cedo</span><span>Início pela trilha da Laguna Torre, saindo do centro de El Chaltén</span></li>
+        <li><span class="t">dia todo</span><span>Subida até o mirante da Loma de las Pizarras</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Loma de las Pizarras</h4>
+        <p class="where">Parque Nacional Los Glaciares · início compartilhado com a trilha da Laguna Torre</p>
+        <div class="gallery">
+          <button type="button" data-cap="Loma de las Pizarras"><img src="images/loma-de-las-pizarras_01.jpg" alt="Vista da Loma de las Pizarras" loading="lazy"></button>
+          <button type="button" data-cap="Vista da Loma de las Pizarras"><img src="images/loma-de-las-pizarras_02.jpg" alt="Panorama a partir da Loma de las Pizarras" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Distância</small><b>~25 km ida e volta</b></div>
+          <div class="fact"><small>Desnível</small><b>~1.500 m</b></div>
+          <div class="fact"><small>Duração</small><b>~10 a 12 h</b></div>
+          <div class="fact"><small>Cume</small><b>~1.700 m · difícil</b></div>
+        </div>
+        <div class="warn"><b>Atenção:</b> é a trilha mais exigente da viagem e vem logo depois da Laguna de los Tres. É menos frequentada e tem marcação escassa na parte alta. Avalie ir com guia e tenha um plano B.</div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>É conhecida como a trilha "escondida" de El Chaltén: pouca gente, e uma vista de 360° que junta o Cerro Torre, o Fitz Roy e o Lago Viedma.</li>
+              <li>"Pizarras" significa ardósia, a rocha laminada e escura que cobre o alto da encosta.</li>
+              <li>O Cerro Torre, com 3.128 m, é famoso pela polêmica ascensão de 1959 declarada pelo italiano Cesare Maestri, que nunca foi comprovada.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Os primeiros 6,5 km, quase planos, seguem pela trilha da Laguna Torre. Depois começa a subida por trilha de pedra.</li>
+              <li>Saia antes do nascer do sol e leve lanterna de cabeça.</li>
+              <li>Leve o trajeto baixado em um app de mapas offline.</li>
+              <li>Veja a previsão de vento no dia anterior. Cume exposto com rajadas fortes não é lugar para insistir.</li>
+              <li><b>Plano B</b> se estiverem cansados ou o tempo virar: ir só até a Laguna Torre, com cerca de 18 km ida e volta e pouco desnível.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">Os números são estimativas de guias e relatos de viajantes e variam entre as fontes.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= EL CALAFATE ======================= -->
+<section id="calafate" style="--c:var(--cal)">
+  <div class="sec-head"><h2>El Calafate</h2><p>Lago Argentino e glaciares · 05/03 a 08/03</p></div>
+  <p class="lead">Base para os grandes glaciares do Campo de Gelo Patagônico Sul. O Parque Nacional Los Glaciares é Patrimônio Mundial da UNESCO desde 1981.</p>
+
+  <!-- 05/03 -->
+  <article class="day" data-date="2027-03-05" style="--c:var(--trip)">
+    <div class="day-head">
+      <div class="date"><b>05</b><small>mar</small></div>
+      <div><div class="wd">Sexta-feira</div><h3>El Chaltén → El Calafate <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">~3 h</span><span>Ida de carro para El Calafate, cerca de 215 km</span></li>
+        <li><span class="t">tarde</span><span>Check-in em hotel <span class="tbd">a definir</span></span></li>
+      </ul>
+      <div class="sug"><span class="badge">Sugestão</span><h4>Passeios curtos antes de sair de El Chaltén</h4>
+        <p><b>Mirador de los Cóndores e de las Águilas:</b> trilha curta que sai perto do centro de visitantes, com vista da cidade e do Lago Viedma. Leva cerca de 2 h ida e volta.</p>
+        <p><b>Chorrillo del Salto:</b> cachoeira a poucos quilômetros da cidade pela estrada do Lago del Desierto, com caminhada de 20 minutos.</p>
+        <p class="mini">Ideal para soltar as pernas depois de dois dias pesados.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 06/03 -->
+  <article class="day" data-date="2027-03-06" style="--c:var(--cal)">
+    <div class="day-head">
+      <div class="date"><b>06</b><small>mar</small></div>
+      <div><div class="wd">Sábado</div><h3>Estancia Cristina · Cañadón de los Fósiles <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">cedo</span><span>Ir até o Puerto Punta Bandera, cerca de 45 km de El Calafate</span></li>
+        <li><span class="t">dia todo</span><span>Navegação pelo Lago Argentino até a Estancia Cristina e trekking ao Cañadón de los Fósiles</span></li>
+        <li><span class="t">noite</span><span>Retorno a El Calafate</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Estancia Cristina · Cañadón de los Fósiles</h4>
+        <p class="where">Braço Norte do Lago Argentino · Parque Nacional Los Glaciares</p>
+        <div class="gallery">
+          <button type="button" data-cap="Estancia Cristina"><img src="images/estancia-cristina_01.jpeg" alt="Estancia Cristina" loading="lazy"></button>
+          <button type="button" data-cap="Paisagem da Estancia Cristina"><img src="images/estancia-cristina_02.jpeg" alt="Paisagem do Cañadón de los Fósiles" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Trekking</small><b>~14 km</b></div>
+          <div class="fact"><small>Caminhada</small><b>~4 a 5 h</b></div>
+          <div class="fact"><small>Dia completo</small><b>~12 h</b></div>
+          <div class="fact"><small>Dificuldade</small><b>Moderada a exigente</b></div>
+        </div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>A estância foi fundada em 1914 pela família inglesa Masters. O nome homenageia a filha do casal, Cristina, que morreu ainda jovem.</li>
+              <li>Durante décadas, o único acesso foi pelo lago. Até hoje se chega lá de barco.</li>
+              <li>A navegação passa entre icebergs desprendidos do <b>Glaciar Upsala</b>, um dos maiores do campo de gelo, que vem recuando rapidamente nas últimas décadas.</li>
+              <li>O Cañadón de los Fósiles guarda fósseis marinhos de quando a região era fundo de mar, antes do surgimento dos Andes.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>Reserve com antecedência. Os barcos têm horário fixo, e o de volta sai no fim da tarde.</li>
+              <li>Como estarão de carro, dá para ir por conta própria até Punta Bandera. Confirme o horário de apresentação no porto.</li>
+              <li>O ingresso do Parque Nacional Los Glaciares é cobrado à parte.</li>
+              <li>Leve corta-vento para o barco e confirme se o almoço está incluído.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 07/03 -->
+  <article class="day" data-date="2027-03-07" style="--c:var(--cal)">
+    <div class="day-head">
+      <div class="date"><b>07</b><small>mar</small></div>
+      <div><div class="wd">Domingo</div><h3>Big Ice · Glaciar Perito Moreno <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="t">cedo</span><span>Ir até o Puerto Bajo de las Sombras, no Parque Nacional Los Glaciares, a cerca de 75 km de El Calafate</span></li>
+        <li><span class="t">dia todo</span><span>Navegação pelo Brazo Rico, caminhada pela morena e trekking com crampons sobre o glaciar</span></li>
+        <li><span class="t">tarde</span><span>Passarelas com a vista frontal do Perito Moreno</span></li>
+      </ul>
+
+      <div class="act">
+        <h4>Big Ice · Perito Moreno</h4>
+        <p class="where">Operadora Hielo y Aventura · Parque Nacional Los Glaciares</p>
+        <div class="gallery">
+          <button type="button" data-cap="Big Ice sobre o Perito Moreno"><img src="images/big-ice_01.jpg" alt="Grupo caminhando sobre o glaciar Perito Moreno" loading="lazy"></button>
+          <button type="button" data-cap="Gelo do Perito Moreno"><img src="images/big-ice_02.jfif" alt="Detalhe do gelo do glaciar Perito Moreno" loading="lazy"></button>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Sobre o gelo</small><b>~3,5 a 4 h</b></div>
+          <div class="fact"><small>Dia completo</small><b>~12 h</b></div>
+          <div class="fact"><small>Idade</small><b>18 a 50 anos</b></div>
+          <div class="fact"><small>Dificuldade</small><b>Exigente</b></div>
+        </div>
+        <div class="cols">
+          <div>
+            <h5>Curiosidades</h5>
+            <ul>
+              <li>O Perito Moreno tem cerca de 30 km de comprimento e uma frente de quase 5 km, com paredes de 60 a 70 m acima da água.</li>
+              <li>É um dos poucos glaciares da região que não está recuando. De tempos em tempos ele represa o Brazo Rico, e a ponte de gelo desaba num espetáculo famoso.</li>
+              <li>O nome homenageia Francisco Pascasio Moreno, o "perito" (especialista) que defendeu a Argentina nas disputas de fronteira com o Chile.</li>
+              <li>O Big Ice é a caminhada mais longa sobre o glaciar e chega ao interior do gelo, com fendas, sumidouros e lagoas azuis.</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dicas</h5>
+            <ul>
+              <li>A operadora exige idade entre 18 e 50 anos e boa forma física. Confirme o requisito vigente na reserva.</li>
+              <li>Leve luvas, porque o gelo é cortante, além de óculos escuros e protetor solar. O reflexo no gelo é intenso.</li>
+              <li>Confirme se o almoço está incluído. Normalmente é preciso levar o próprio lanche.</li>
+              <li>O ingresso do parque é pago na portaria, à parte do passeio.</li>
+              <li>Indo de carro, confirme com a operadora o horário de embarque em Bajo de las Sombras.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= BARILOCHE ======================= -->
+<section id="bariloche" style="--c:var(--bar)">
+  <div class="sec-head"><h2>Bariloche</h2><p>Lago Nahuel Huapi · 08/03 a 13/03</p></div>
+  <p class="lead">Os dias em Bariloche ainda estão em aberto. Os blocos tracejados abaixo são <b>sugestões</b>, não estão reservados.</p>
+
+  <!-- 08/03 -->
+  <article class="day" data-date="2027-03-08" style="--c:var(--trip)">
+    <div class="day-head">
+      <div class="date"><b>08</b><small>mar</small></div>
+      <div><div class="wd">Segunda-feira</div><h3>El Calafate → Bariloche <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><time>09:00</time><span>Devolver o carro na <b>Always</b></span></li>
+        <li><time>10:20</time><span>Voo de El Calafate (FTE) para Bariloche (BRC) pela Aerolíneas Argentinas</span></li>
+        <li><time>12:05</time><span>Chegada em Bariloche</span></li>
+        <li><time>13:00</time><span>Retirada do carro na agência <span class="tbd">a definir</span></span></li>
+        <li><span class="t">tarde</span><span>Check-in em hotel <span class="tbd">a definir</span></span></li>
+      </ul>
+      <div class="sug"><span class="badge">Sugestão</span>
+        <p>Fim de tarde no centro: Centro Cívico, a avenida Mitre com as fábricas de chocolate e um jantar com cordeiro patagônico ou truta.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 09/03 -->
+  <article class="day" data-date="2027-03-09" style="--c:var(--bar)">
+    <div class="day-head">
+      <div class="date"><b>09</b><small>mar</small></div>
+      <div><div class="wd">Terça-feira</div><h3>Roteiro a definir <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <div class="sug" style="margin-top:4px"><span class="badge">Sugestão</span><h4>Circuito Chico + Cerro Campanario + Cerro Llao Llao</h4>
+        <p>O Circuito Chico é um anel de cerca de 60 km pela Av. Bustillo, passando pela Península Llao Llao, pelo Punto Panorámico e pela Bahía López. Suba o <b>Cerro Campanario</b> de teleférico ou a pé, em uns 30 minutos. A vista dos lagos lá de cima é considerada uma das mais bonitas do mundo. À tarde, faça a trilha curta do <b>Cerro Llao Llao</b>, de cerca de 1 h de subida no bosque do Parque Municipal Llao Llao. Termine na Cervecería Patagonia, de frente para o lago.</p>
+        <p class="mini">Esforço leve · bom dia para descansar depois da Patagônia sul</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 10/03 -->
+  <article class="day" data-date="2027-03-10" style="--c:var(--bar)">
+    <div class="day-head">
+      <div class="date"><b>10</b><small>mar</small></div>
+      <div><div class="wd">Quarta-feira</div><h3>Roteiro a definir <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <div class="sug" style="margin-top:4px"><span class="badge">Sugestão</span><h4>Trilha ao Refugio Frey</h4>
+        <p>Clássico do trekking em Bariloche. A trilha sai da base do Cerro Catedral e segue pela encosta do Lago Gutiérrez até o refúgio de montanha. Ele fica à beira da Laguna Toncek, cercado por agulhas de granito disputadas por escaladores. Dá para almoçar no refúgio.</p>
+        <p class="mini">~20 km ida e volta · ~750 m de desnível · 7 a 8 h · moderada</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 11/03 -->
+  <article class="day" data-date="2027-03-11" style="--c:var(--bar)">
+    <div class="day-head">
+      <div class="date"><b>11</b><small>mar</small></div>
+      <div><div class="wd">Quinta-feira</div><h3>Roteiro a definir <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <div class="sug" style="margin-top:4px"><span class="badge">Sugestão</span><h4>Villa La Angostura + Bosque de Arrayanes</h4>
+        <p>Estrada cênica de cerca de 80 km até Villa La Angostura, contornando o Nahuel Huapi. O Bosque de Arrayanes, com árvores de tronco cor de canela, fica na ponta da Península Quetrihué. Dá para chegar de barco ou por uma trilha de cerca de 12 km por trecho. Com energia sobrando, estique pelo começo da <b>Ruta de los Siete Lagos</b>.</p>
+        <p class="mini">Dia de estrada e paisagem · esforço leve a moderado</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 12/03 -->
+  <article class="day" data-date="2027-03-12" style="--c:var(--bar)">
+    <div class="day-head">
+      <div class="date"><b>12</b><small>mar</small></div>
+      <div><div class="wd">Sexta-feira</div><h3>Roteiro a definir <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <div class="sug-grid" style="margin-top:4px">
+        <div class="sug"><span class="badge">Opção A</span><h4>Cerro Tronador · Pampa Linda</h4>
+          <p>Cerca de 85 km até a base do vulcão extinto, na fronteira com o Chile. A atração é o Ventisquero Negro, um glaciar coberto de sedimentos escuros. O último trecho da estrada é de rípio e tem horários alternados de subida e descida, então confirme antes de sair.</p>
+        </div>
+        <div class="sug"><span class="badge">Opção B</span><h4>Cerro Catedral ou Cerro Otto + compras</h4>
+          <p>Dia mais leve: suba um dos cerros de teleférico para ver o Nahuel Huapi do alto. Confirme o funcionamento no verão. Depois, compras de chocolate e um último jantar no centro.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= VOLTA ======================= -->
+<section id="volta" style="--c:var(--trip)">
+  <div class="sec-head"><h2>Volta</h2><p>Bariloche → Buenos Aires → Florianópolis</p></div>
+
+  <article class="day" data-date="2027-03-13" style="--c:var(--trip)">
+    <div class="day-head">
+      <div class="date"><b>13</b><small>mar</small></div>
+      <div><div class="wd">Sábado</div><h3>Retorno para casa <span class="today-tag">hoje</span></h3></div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><time>10:00</time><span>Devolver o carro no aeroporto de Bariloche, com cerca de 3 h de folga antes do voo</span></li>
+        <li><time>12:55</time><span>Saída de Bariloche (BRC) em voo da Aerolíneas Argentinas</span></li>
+        <li><time>15:00</time><span>Chegada em Buenos Aires (AEP)</span></li>
+        <li><span class="t">3h50</span><span>Escala no Aeroparque (AEP)</span></li>
+        <li><time>18:50</time><span>Saída de AEP em voo da Aerolíneas Argentinas</span></li>
+        <li><time>20:50</time><span>Chegada em Florianópolis (FLN)</span></li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<!-- ======================= DICAS ======================= -->
+<section id="dicas">
+  <div class="sec-head"><h2>Dicas gerais</h2></div>
+  <div class="tips">
+    <div class="tip">
+      <h3>Clima e roupas</h3>
+      <ul>
+        <li>Fim do verão austral, com dias longos e o sol se pondo entre 20h e 21h.</li>
+        <li>No sul, as temperaturas ficam aproximadamente entre 5 °C e 18 °C, com <b>muito vento</b>. Bariloche costuma ser mais amena.</li>
+        <li>O tempo muda rápido: sol, chuva e vento podem aparecer na mesma hora.</li>
+        <li>Vista camadas: segunda pele, fleece, jaqueta impermeável e corta-vento, gorro, luvas e buff.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <h3>Equipamento de trilha</h3>
+      <ul>
+        <li>Bota impermeável já amaciada, polaina para os turbais e bastões de caminhada.</li>
+        <li>Mochila de ataque com 2 L de água, lanche, kit de primeiros socorros e lanterna de cabeça.</li>
+        <li>Protetor solar, óculos escuros e protetor labial.</li>
+        <li>Mapas offline e trajetos baixados, porque não há sinal de celular em muitas trilhas.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <h3>Documentos</h3>
+      <ul>
+        <li>Brasileiros entram na Argentina com RG emitido há menos de 10 anos ou com passaporte válido.</li>
+        <li>A CNH brasileira vale para dirigir na Argentina. Leve também o cartão de crédito usado na reserva dos carros.</li>
+        <li>Seguro viagem é altamente recomendado. Confira se está sendo exigido na entrada.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <h3>Dinheiro</h3>
+      <ul>
+        <li>A moeda é o peso argentino. A cotação muda muito, então consulte perto da viagem.</li>
+        <li>Cartão de crédito internacional é aceito na maioria dos lugares.</li>
+        <li>Leve algum dinheiro em espécie para estacionamentos, portarias de parque e lugares pequenos.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <h3>Parques nacionais</h3>
+      <ul>
+        <li>Há cobrança de ingresso no PN Tierra del Fuego e no PN Los Glaciares, tanto em El Chaltén quanto no Perito Moreno.</li>
+        <li>Compra pelo site oficial <a href="https://ventaweb.apn.gob.ar/" target="_blank" rel="noopener">ventaweb.apn.gob.ar</a>. As tarifas foram reajustadas em 2026.</li>
+        <li>Os ingressos dos parques não estão incluídos no preço dos passeios.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <h3>Na estrada</h3>
+      <ul>
+        <li>Os postos de combustível são poucos entre as cidades. Abasteça sempre que puder.</li>
+        <li>Há guanacos, ñandus e ovelhas na pista, e rajadas laterais fortes. Dirija com as duas mãos no volante.</li>
+        <li>Abra a porta do carro segurando firme, porque o vento pode arrancá-la.</li>
+        <li>Fuso horário: a Argentina usa UTC−3, o mesmo de Brasília. As tomadas são do tipo I e a voltagem é 220 V.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PENDÊNCIAS ======================= -->
+<section id="pendencias">
+  <div class="sec-head"><h2>Pendências</h2><p>Marque o que for resolvendo. Fica salvo neste navegador.</p></div>
+  <ul class="todo" id="todo">
+    <li><label><input type="checkbox" data-id="hotel-calafate"><span>Reservar hotel em El Calafate, de 05/03 a 08/03</span></label></li>
+    <li><label><input type="checkbox" data-id="carro-bariloche"><span>Definir a locadora em Bariloche, com retirada em 08/03 às 13:00 e devolução em 13/03 às 10:00</span></label></li>
+    <li><label><input type="checkbox" data-id="hotel-bariloche"><span>Reservar hotel em Bariloche, de 08/03 a 13/03</span></label></li>
+    <li><label><input type="checkbox" data-id="roteiro-bariloche"><span>Fechar o roteiro dos dias 09 a 12/03 em Bariloche</span></label></li>
+    <li><label><input type="checkbox" data-id="piratour"><span>Confirmar a reserva da Caminata con Pingüinos na Piratour, que tem vagas limitadas</span></label></li>
+    <li><label><input type="checkbox" data-id="cristina"><span>Reservar a excursão da Estancia Cristina com o Cañadón de los Fósiles</span></label></li>
+    <li><label><input type="checkbox" data-id="bigice"><span>Reservar o Big Ice na Hielo y Aventura</span></label></li>
+    <li><label><input type="checkbox" data-id="ingressos"><span>Comprar os ingressos dos parques nacionais</span></label></li>
+    <li><label><input type="checkbox" data-id="seguro"><span>Contratar seguro viagem</span></label></li>
+    <li><label><input type="checkbox" data-id="mapas"><span>Baixar mapas offline e os trajetos das trilhas</span></label></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  Patagônia Argentina · 26/02 a 13/03/2027<br>
+  Distâncias, desníveis e tempos são aproximados e variam entre as fontes. Confirme horários e regras com as operadoras e os parques.
+</footer>
+
+<!-- ======================= LIGHTBOX ======================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button type="button" id="lbClose" aria-label="Fechar">×</button>
+  <figure style="margin:0">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  /* ---------- Contagem regressiva ---------- */
+  var start = new Date("2027-02-26T22:05:00-03:00");
+  var end   = new Date("2027-03-13T20:50:00-03:00");
+  var cd = document.getElementById("countdown");
+  function pad(n){return String(n).padStart(2,"0");}
+  function tick(){
+    var now = new Date();
+    if (now >= end){ cd.innerHTML = '<p class="countdown-msg">Viagem concluída. Que venha a próxima!</p>'; return; }
+    if (now >= start){ cd.innerHTML = '<p class="countdown-msg">Boa viagem! A aventura já começou.</p>'; return; }
+    var s = Math.floor((start - now)/1000);
+    var d = Math.floor(s/86400); s -= d*86400;
+    var h = Math.floor(s/3600);  s -= h*3600;
+    var m = Math.floor(s/60);    s -= m*60;
+    cd.innerHTML =
+      '<div><b>'+d+'</b><small>dias</small></div>'+
+      '<div><b>'+pad(h)+'</b><small>horas</small></div>'+
+      '<div><b>'+pad(m)+'</b><small>min</small></div>'+
+      '<div><b>'+pad(s)+'</b><small>seg</small></div>';
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ---------- Rótulos das tabelas para o layout de celular ---------- */
+  document.querySelectorAll("table").forEach(function(tb){
+    var heads = Array.prototype.map.call(tb.querySelectorAll("thead th"), function(th){ return th.textContent; });
+    tb.querySelectorAll("tbody tr").forEach(function(tr){
+      Array.prototype.forEach.call(tr.children, function(td, i){ td.setAttribute("data-label", heads[i] || ""); });
+    });
+  });
+
+  /* ---------- Destaque do dia atual ---------- */
+  var t = new Date();
+  var today = t.getFullYear()+"-"+pad(t.getMonth()+1)+"-"+pad(t.getDate());
+  var card = document.querySelector('.day[data-date="'+today+'"]');
+  if (card){
+    card.classList.add("today");
+    card.id = "hoje";
+    document.getElementById("todayBtn").style.display = "block";
+  }
+
+  /* ---------- Lightbox ---------- */
+  var lb = document.getElementById("lightbox"),
+      lbImg = document.getElementById("lbImg"),
+      lbCap = document.getElementById("lbCap");
+  document.querySelectorAll(".gallery button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var img = btn.querySelector("img");
+      lbImg.src = img.src; lbImg.alt = img.alt;
+      lbCap.textContent = btn.getAttribute("data-cap") || img.alt;
+      lb.classList.add("open");
+    });
+  });
+  function closeLb(){ lb.classList.remove("open"); lbImg.src = ""; }
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  lb.addEventListener("click", function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeLb(); });
+
+  /* ---------- Pendências salvas no navegador ---------- */
+  var KEY = "patagonia-pendencias";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){}
+  document.querySelectorAll("#todo input").forEach(function(cb){
+    cb.checked = !!saved[cb.dataset.id];
+    cb.addEventListener("change", function(){
+      saved[cb.dataset.id] = cb.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e){}
+    });
+  });
+
+  /* ---------- Link ativo na navegação ---------- */
+  var links = document.querySelectorAll('nav.top a[href^="#"]:not(#todayBtn)');
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          links.forEach(function(a){ a.classList.remove("active"); });
+          var a = map[en.target.id];
+          if (a){
+            a.classList.add("active");
+            var ul = a.closest("ul");
+            ul.scrollLeft = a.offsetLeft - (ul.clientWidth - a.offsetWidth)/2;
+          }
+        }
+      });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    document.querySelectorAll("main section[id]").forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
