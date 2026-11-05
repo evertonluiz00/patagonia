@@ -36,48 +36,57 @@
 * Chegada em El Calafate as 12:40
 * Retirada do carro na agência "Always" as 13:30
 * Ida de carro para El Chaltén
-* Check in no Chaltén Suites Hotel
+* Check in no Destino Sur Hotel & Spa de Montaña
 
 ## quarta, 03/03/2027, El Chaltén
 
+* Check out do Destino Sur Hotel & Spa de Montaña
 * Trilha: Laguna de los Tres (Fitz Roy)
   - Pode adicionar aqui informações e curiosidades sobre esse trilha.
   - Se necessário, pode usar imagens desse passeio na pasta imagens.
+* Check in no Cumbres Nevadas - Hostería Boutique
 
 ## quinta, 04/03/2027, El Chaltén
 
+* Check out do Cumbres Nevadas - Hostería Boutique
 * Trilha: Loma de las Pizarras
   - Pode adicionar aqui informações e curiosidades sobre esse trilha.
   - Se necessário, pode usar imagens desse passeio na pasta imagens.
+* Check in no Chalten Suites Hotel
 
 ## sexta, 05/03/2027, Viagem
 
+* Check out do Chalten Suites Hotel
 * Ida de carro para El Calafate
-* Check in em hotel a definir
+* Check in no MABRA SUITES
 
 ## sábado, 06/03/2027, El Calafate
-
-* Trilha: Estancia Cristina (Cañadón de los Fósiles)
-  - Pode adicionar aqui informações e curiosidades sobre esse trilha.
-  - Se necessário, pode usar imagens desse passeio na pasta imagens.
-
-## domingo, 07/03/2027, El Calafate
 
 * Trilha: Big Ice (Glaciar Perito Moreno)
   - Pode adicionar aqui informações e curiosidades sobre esse trilha.
   - Se necessário, pode usar imagens desse passeio na pasta imagens.
 
+## domingo, 07/03/2027, El Calafate
+
+* Trilha: Estancia Cristina (Cañadón de los Fósiles)
+  - Pode adicionar aqui informações e curiosidades sobre esse trilha.
+  - Se necessário, pode usar imagens desse passeio na pasta imagens.
+
 ## segunda, 08/03/2027, Viagem
 
+* Check out do MABRA SUITES
 * Devolver o carro na "Always" as 09:00
 * Voo de El Calafate (FTE) para Bariloche (BRC) as 10:20
 * Chegada em Bariloche as 12:05
-* Retirada do carro na agência "???" as 13:00
-* Check in no hotel a definir
+* Retirada do carro na agência "Localiza" as 13:00
+* Ida para San Martin de Los Andes
+* Check in em Hotel "a Definir"
 
-## terça, 09/03/2027, Bariloche
+## terça, 09/03/2027, Viagem
 
-* roteiro a definir
+* Check out do Hotel "a Definir"
+* Ida para Bariloche passando por Villa La Angostura
+* Check in em Hotel "a Definir" em Bariloche
 
 ## quarta, 10/03/2027, Barilhoce
 
@@ -93,6 +102,8 @@
 
 # sábado, 13/03/2027, Retorno 
 
+* Check out do Hotel "a Definir"
+* Devolver o carro na "Localiza" as 10:30
 * Saída de Bariloche (BRC) as 12:55 em voo da Aerolineas Argentinas
 * Chega 15:00 em Buenos Aires
 * Escala de 3hrs e 50 minutos no Aeroporto de Buenos Aires (AEP)
